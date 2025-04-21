@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# 🍽️ Restaurant Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack restaurant management web application built using **React.js**, **Node.js**, and **MySQL**. This system allows customers to browse the menu, place orders, and track status, while the admin can manage orders, menu items, and billing efficiently.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+### 👥 Customer Side
+- Browse categorized menu (Starters, Main Course, Desserts, Drinks, etc.)
+- Add items to cart and place an order
+- View order status updates in real-time
+- Responsive UI with quantity control
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔐 Admin Side
+- Secure admin login with MySQL-backed authentication
+- Dashboard with statistics: total orders, revenue, item count
+- Manage orders with status flow:
+  `Pending → Approved → Preparing → Ready → Served → Paid`
+- Manage menu: add, update, delete, mark items out of stock
+- View billing and order history with filters
+- Graphs for revenue and order status (using Recharts)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend:** React.js + Vite, Tailwind CSS, shadcn/ui
+- **Backend:** Node.js, Express.js
+- **Database:** MySQL
+- **Others:** Recharts (for graphs), LocalStorage (for cart), bcrypt (for password hashing)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📸 Screenshots
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Page | Screenshot |
+|------|------------|
+| Home Page | ![Home](screenshots/home.png) |
+| Menu Page | ![Menu](screenshots/menu.png) |
+| Admin Login | ![Admin Login](screenshots/admin-login.png) |
+| Admin Dashboard | ![Dashboard](screenshots/dashboard.png) |
+| Manage Orders | ![Orders](screenshots/manage-orders.png) |
+| Manage Menu | ![Menu Admin](screenshots/manage-menu.png) |
+| Order History | ![Order History](screenshots/order-history.png) |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> 📁 Create a `screenshots/` folder and place your image files there with appropriate names.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Database Schema
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `menu`: item_id, name, category, price, image, in_stock
+- `orders`: order_id, name, table_number, item_id, quantity, status, timestamps
+- `admin_users`: id, username, password_hash
+- `paid_orders`: order_id, paid_at, customer_name, table_no, items, total_amount, paid_at
+- `customers`: customer_id, name, table_no
+- `order_history`: history_id, order_id, customer_name, table_no, order_time, items, total_amount, status, paid_at, order_status
+- `order_items`: order_item_id, order_id, item_id, quantity
+- `payments` : payment_id, order_id, total_amount, payment_status, payment_time
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🔐 Admin Credentials
 
-## Learn More
+username: admin
+password: gourmethaven@123
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ Setup Instructions
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repo**
+```bash
+git clone https://github.com/your-username/restaurant-management.git
+cd restaurant-management
