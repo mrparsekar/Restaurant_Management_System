@@ -64,6 +64,7 @@ A full-stack restaurant management web application built using **React.js**, **N
 ## 🔐 Admin Credentials
 
 username: admin
+
 password: gourmethaven@123
 
 ---
@@ -71,6 +72,28 @@ password: gourmethaven@123
 ## ⚙️ Setup Instructions
 
 1. **Clone the repo**
-```bash
+
 git clone https://github.com/your-username/restaurant-management.git
 cd restaurant-management
+
+2. Install backend dependencies
+
+cd backend
+npm install
+
+3. Install frontend dependencies
+
+cd ../frontend
+npm install
+
+4. Start MySQL & create tables Import schema.sql (provide it if you have one).
+
+5. Run backend
+
+cd backend
+node server.js
+
+6. Run frontend
+cd frontend
+npm run dev
+
