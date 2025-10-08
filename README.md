@@ -81,19 +81,19 @@ cd restaurant-management
 cd backend
 npm install
 
+run
+node index.js
+
 3. Install frontend dependencies
 
 cd ../frontend
 npm install
 
+run
+npm start
+
 4. Start MySQL & create tables Import schema.sql (provide it if you have one).
 
 5. Run backend
 
-cd backend
-node server.js
-
-6. Run frontend
-cd frontend
-npm run dev
 
