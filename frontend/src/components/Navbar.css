@@ -1,0 +1,105 @@
+.site-header {
+  padding: 0.75rem 0.9rem 0;
+}
+
+.navbar {
+  max-width: 1180px;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: rgba(255, 253, 249, 0.95);
+  padding: 0.7rem 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.brand {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-weight: 800;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-2);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--muted);
+  border-radius: 999px;
+  font-weight: 600;
+  padding: 0.42rem 0.75rem;
+}
+
+.link.active,
+.link:hover {
+  color: var(--ink);
+  background: #f5ebdf;
+}
+
+.admin {
+  border: 1px solid var(--line);
+}
+
+.badge {
+  margin-left: 0.3rem;
+  font-size: 0.75rem;
+  color: #fff;
+  background: var(--accent);
+  border-radius: 999px;
+  min-width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
+}
+
+.menu-button {
+  display: none;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  padding: 0.38rem 0.72rem;
+  font-weight: 700;
+}
+
+@media (max-width: 780px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .menu-button {
+    display: inline-block;
+  }
+
+  .links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+    padding-top: 0.3rem;
+  }
+
+  .links.show {
+    display: flex;
+  }
+
+  .link {
+    border-radius: 10px;
+  }
+}

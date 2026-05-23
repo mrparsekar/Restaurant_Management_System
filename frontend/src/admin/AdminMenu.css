@@ -1,0 +1,112 @@
+.admin-menu-container {
+  background: #fff;
+  border: 1px solid #e6dacd;
+  border-radius: 14px;
+  padding: 0.9rem;
+}
+
+.admin-menu-heading {
+  margin: 0 0 0.8rem;
+}
+
+.add-item-btn,
+.submit-btn,
+.cancel-btn,
+.edit-btn,
+.delete-btn,
+.stock-toggle-btn {
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+}
+
+.add-item-btn,
+.edit-btn {
+  background: #2f6ea1;
+}
+
+.submit-btn,
+.stock-toggle-btn.in-stock {
+  background: #2f7d4f;
+}
+
+.cancel-btn,
+.delete-btn {
+  background: #bf3b21;
+}
+
+.stock-toggle-btn.out-stock {
+  background: #b55b2a;
+}
+
+.add-form {
+  margin: 0.9rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.6rem;
+}
+
+.add-form input,
+.add-form select,
+.search-input,
+.category-select {
+  border: 1px solid #e3d6c9;
+  border-radius: 8px;
+  padding: 0.55rem;
+}
+
+.form-buttons,
+.filter-controls,
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filter-controls {
+  margin: 0.5rem 0 1rem;
+}
+
+.menu-items-grid {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.menu-item-card {
+  border: 1px solid #eadfd3;
+  border-radius: 10px;
+  padding: 0.7rem;
+  display: grid;
+  grid-template-columns: 110px 1fr auto;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+.menu-item-image {
+  width: 110px;
+  height: 86px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.menu-item-name {
+  margin: 0;
+}
+
+.out-of-stock-label {
+  color: #bf3b21;
+  font-weight: 600;
+}
+
+@media (max-width: 720px) {
+  .menu-item-card {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-item-image {
+    width: 100%;
+    height: 170px;
+  }
+}

@@ -1,0 +1,109 @@
+.admin-orders {
+  background: #fff;
+  border: 1px solid #e6dacd;
+  border-radius: 14px;
+  padding: 0.9rem;
+}
+
+.orders-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.admin-orders h2 {
+  margin: 0;
+}
+
+.orders-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.orders-filters input,
+.orders-filters select {
+  border: 1px solid #dfd2c3;
+  border-radius: 8px;
+  padding: 0.45rem 0.55rem;
+}
+
+.refresh-btn {
+  border: none;
+  border-radius: 8px;
+  background: #2f6ea1;
+  color: #fff;
+  padding: 0.45rem 0.65rem;
+  cursor: pointer;
+}
+
+.results-count {
+  margin: 0.6rem 0;
+  color: #6f655d;
+  font-size: 0.9rem;
+}
+
+.orders-table-wrap {
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  border: 1px solid #ebdfd3;
+  padding: 0.55rem;
+  vertical-align: top;
+}
+
+.orders-table th {
+  background: #f7f1e8;
+  text-align: left;
+}
+
+.status-chip {
+  display: inline-block;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.18rem 0.48rem;
+}
+
+.status-pending { background: #fef1dd; color: #9a6114; }
+.status-approved { background: #e7f0ff; color: #2f6ea1; }
+.status-preparing { background: #efe9ff; color: #6b50a3; }
+.status-ready { background: #e4f8ea; color: #2f7d4f; }
+.status-served { background: #fde4e0; color: #b14a31; }
+
+.order-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.status-btn,
+.pay-btn {
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+
+.status-btn { background: #2f7d4f; }
+.pay-btn { background: #b55b2a; }
+
+.done-status {
+  font-weight: 700;
+  color: #2f7d4f;
+}
+
+.error-text {
+  color: #bf3b21;
+}

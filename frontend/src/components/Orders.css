@@ -1,0 +1,136 @@
+.orders-container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0.9rem 0.9rem 2rem;
+}
+
+.orders-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+}
+
+.orders-header h2 {
+  margin: 0;
+}
+
+.refresh-toggle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.input-group {
+  margin-top: 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+  padding: 0.7rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 0.55rem;
+}
+
+.input-group input {
+  border: 1px solid var(--line);
+  border-radius: 9px;
+  padding: 0.6rem;
+}
+
+.input-group button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 0.95rem;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.input-group button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.updated-at,
+.no-orders-message {
+  color: var(--muted);
+}
+
+.error-message {
+  color: #b43b22;
+  font-weight: 600;
+}
+
+.orders-grid {
+  margin-top: 0.8rem;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.order-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--paper);
+  padding: 0.8rem;
+}
+
+.order-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.7rem;
+}
+
+.order-top h3 {
+  margin: 0;
+}
+
+.order-status {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: #7f2d1d;
+  background: #f9e2d2;
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+}
+
+.order-time {
+  margin: 0.3rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.ordered-items {
+  margin: 0.7rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.ordered-items li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  border-bottom: 1px dashed var(--line);
+  padding: 0.33rem 0;
+}
+
+.total-price {
+  margin: 0;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+@media (max-width: 760px) {
+  .orders-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-group {
+    grid-template-columns: 1fr;
+  }
+}

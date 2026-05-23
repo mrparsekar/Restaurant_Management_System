@@ -1,0 +1,168 @@
+.home {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0.9rem;
+}
+
+.hero {
+  min-height: 64svh;
+  border-radius: 26px;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  align-items: end;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, rgba(24, 16, 10, 0.8), rgba(24, 16, 10, 0.25));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  max-width: 620px;
+  padding: 2rem;
+}
+
+.kicker {
+  margin: 0;
+  color: #f6cb73;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+}
+
+.hero-content h1 {
+  margin: 0.6rem 0;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.08;
+}
+
+.hero-content p {
+  margin: 0;
+  max-width: 540px;
+}
+
+.hero-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.cta {
+  text-decoration: none;
+  padding: 0.68rem 1rem;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.cta.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.cta.secondary {
+  background: #fff;
+  color: #402212;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.intro-grid article {
+  background: var(--paper);
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  padding: 0.95rem;
+}
+
+.intro-grid h3 {
+  margin: 0;
+}
+
+.intro-grid p {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+}
+
+.best-sellers {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.section-title-row h2 {
+  margin: 0;
+}
+
+.inline-link {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.dish-grid {
+  margin-top: 0.85rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+}
+
+.dish {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.dish img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+}
+
+.dish h4,
+.dish p {
+  margin: 0;
+  padding: 0.45rem 0.6rem;
+}
+
+.dish p {
+  color: var(--accent);
+  padding-top: 0;
+  font-weight: 700;
+}
+
+@media (max-width: 860px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 58svh;
+  }
+
+  .hero-content {
+    padding: 1.2rem;
+  }
+}

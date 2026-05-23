@@ -1,0 +1,82 @@
+.order-history-wrapper {
+  background: #fff;
+  border: 1px solid #e6dacd;
+  border-radius: 14px;
+  padding: 0.9rem;
+}
+
+.history-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.order-history-heading {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.history-head input {
+  border: 1px solid #dfd2c3;
+  border-radius: 8px;
+  padding: 0.45rem 0.55rem;
+  min-width: 280px;
+}
+
+.results-count {
+  margin: 0.55rem 0;
+  color: #6f655d;
+  font-size: 0.9rem;
+}
+
+.order-history-scroll {
+  overflow-x: auto;
+}
+
+.order-history-table {
+  width: 100%;
+  min-width: 980px;
+  border-collapse: collapse;
+}
+
+.order-history-table th,
+.order-history-table td {
+  border: 1px solid #ebdfd3;
+  padding: 0.55rem;
+  text-align: left;
+}
+
+.order-history-table thead {
+  background: #f7f1e8;
+}
+
+.items-cell {
+  max-width: 280px;
+}
+
+.item-pill {
+  display: inline-block;
+  margin: 0.1rem 0.12rem;
+  background: #f4ece0;
+  border-radius: 999px;
+  padding: 0.16rem 0.46rem;
+  font-size: 0.78rem;
+}
+
+.history-status {
+  background: #e4f8ea;
+  color: #2f7d4f;
+  border-radius: 999px;
+  padding: 0.18rem 0.52rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.loading-message,
+.no-record-message {
+  text-align: center;
+  color: #6f655d;
+  padding: 2.2rem;
+}

@@ -1,0 +1,128 @@
+.admin-login-wrapper {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background:
+    radial-gradient(circle at 10% 8%, rgba(213, 150, 52, 0.22), transparent 32%),
+    radial-gradient(circle at 87% 15%, rgba(155, 64, 43, 0.2), transparent 30%),
+    #f3efe8;
+}
+
+.login-brand-header {
+  width: min(440px, 100%);
+  margin-bottom: 0.75rem;
+}
+
+.brand-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid #d6a157;
+}
+
+.brand-kicker {
+  margin: 0;
+  color: #8f7153;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.brand-name {
+  margin: 0.15rem 0 0;
+  font-size: 1.15rem;
+  color: #2b1f16;
+}
+
+.login-card {
+  width: min(440px, 100%);
+  border: 1px solid #e6d9ca;
+  border-radius: 20px;
+  background: rgba(255, 253, 249, 0.96);
+  padding: 1.4rem;
+  box-shadow: 0 14px 34px rgba(35, 24, 17, 0.12);
+}
+
+.admin-badge {
+  margin: 0;
+  color: #9a5837;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.login-title {
+  margin: 0.35rem 0 0;
+  font-size: 1.85rem;
+}
+
+.login-subtitle {
+  margin: 0.5rem 0 1rem;
+  color: #73665b;
+}
+
+.error-box {
+  background: #ffe6e3;
+  color: #b3321f;
+  border: 1px solid #ffc2b9;
+  border-radius: 10px;
+  padding: 0.6rem 0.7rem;
+  margin-bottom: 0.75rem;
+}
+
+.login-form {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.input-group {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.input-group label {
+  font-weight: 600;
+}
+
+.input-group input {
+  border: 1px solid #e4d8ca;
+  border-radius: 10px;
+  padding: 0.66rem;
+  font-size: 0.95rem;
+}
+
+.login-btn {
+  border: none;
+  border-radius: 999px;
+  background: #c0522f;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.68rem;
+  cursor: pointer;
+}
+
+.login-btn:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 0.85rem;
+  color: #9a5837;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,28 @@
+:root {
+  --bg: #f3efe8;
+  --paper: #fffdf9;
+  --ink: #1f1a16;
+  --muted: #6d6258;
+  --accent: #bf4f29;
+  --accent-2: #e6a429;
+  --line: #e5d7c8;
+  --ok: #2f7d4f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 12% 10%, rgba(230, 164, 41, 0.2), transparent 30%),
+    radial-gradient(circle at 84% 14%, rgba(191, 79, 41, 0.14), transparent 30%),
+    var(--bg);
+  font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+}
+
+a {
+  color: inherit;
+}
